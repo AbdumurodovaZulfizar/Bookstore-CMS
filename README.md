@@ -18,11 +18,11 @@ This application is one of the Microverse requirements based on React library wi
 ## To get local copy up and running follow these simple example steps
 
 ```
-git clone https://github.com/AbdumurodovaZulfizar/bookstore.git
+git clone https://github.com/AbdumurodovaZulfizar/Bookstore-CMS.git
 ```
 
 ```
-cd bookstore
+cd Bookstore-CMS
 ```
 ### Prerequisites
 
