@@ -9,6 +9,18 @@ const Book  = ({ id, title, category }) => {
       <h4>{category}</h4>
     </div>
   )
+};
+
+Book.propTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string,
+  category: PropTypes.string,
+};
+
+Book.defaultProps = {
+  id: null,
+  title: '',
+  category: '',
 }
 
 export default Book;
