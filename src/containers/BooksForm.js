@@ -53,11 +53,11 @@ class BooksForm extends Component {
             minLength={5}
           />
           <select class="form-select" aria-label="Default select example" name="category" value={category} onChange={this.handleChange}>
-            {categories.map((types) => {
+            {categories.map((types) => (
               <option value={types} key={types}>
                 {types}
               </option>
-            })}
+            ))}
           </select>
           <button type="button" class="btn btn-primary">Submit</button>
         </form>
