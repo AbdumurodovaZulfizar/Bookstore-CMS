@@ -16,14 +16,15 @@ const BooksList = ({ books, removebook }) => (
     <tbody>
       {
       books.map((book) => (
-      <BookConatiner
-        id={book.id}
-        title={book.title}
-        category={book.category}
-        key={book.id}
-        removebook={removebook}
-      />
-      ))}
+        <BookConatiner
+          id={book.id}
+          title={book.title}
+          category={book.category}
+          key={book.id}
+          removebook={removebook}
+        />
+      ))
+      }
     </tbody>
   </table>
 );
