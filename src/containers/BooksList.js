@@ -13,9 +13,9 @@ const BooksList = ({ books, removebook }) => (
         <th scope="col">Category</th>
       </tr>
     </thead>
-  <tbody>
-  {
-    books.map((book) => (
+    <tbody>
+      {
+      books.map((book) => (
       <BookConatiner
         id={book.id}
         title={book.title}
@@ -23,21 +23,20 @@ const BooksList = ({ books, removebook }) => (
         key={book.id}
         removebook={removebook}
       />
-    ))
-  }
-  </tbody>
-</table>
-)
+      ))}
+    </tbody>
+  </table>
+);
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.instanceOf(Object)),
   removebook: PropTypes.func,
-}
+};
 
 BooksList.defaultProps = {
   books: [],
   removebook: null,
-}
+};
 
 const mapStateToProps = (state) => ({
   books: state.books,

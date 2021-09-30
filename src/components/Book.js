@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { removebook } from '../actions/index';
 
 const Book = ({
-  id, title, category, removebook
-  }) => (
+  id, title, category, removebook,
+}) => (
   <tr>
     <td>{id}</td>
     <td>{title}</td>

@@ -1,15 +1,15 @@
 const defaultSate = [];
 
 const bookReducer = (state = defaultSate, action) => {
-  switch(action.type) {
-    case "CREATE_BOOK":
-      const { book } = action.payload;
-      return [...state, book];
-    case "REMOVE_BOOK":
-      const { id } = action.payload;
-      return state.filter((book) => book.id !== id)
-    default:
-      return state;
+  if (action.type === 'CREATE_BOOK') {
+    const { book } = action.payload;
+    return [...state, book];
+  }
+  else if(action.type === 'REMOVE_BOOK') {
+    const { id } = action.payload;
+    return state.filter((book) => book.id !== id)
+  } else {
+    return state;
   }
 };
 
