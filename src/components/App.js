@@ -1,10 +1,12 @@
-import PropTypes from 'prop-types';
-import React from 'react'
+import React from 'react';
+import BookListContainer from '../containers/BooksList';
+import BookFormContainer from '../containers/BooksForm';
 
 const App = () => {
   return(
     <div>
-      
+      <BookListContainer />
+      <BookFormContainer />
     </div>
   )
 }
