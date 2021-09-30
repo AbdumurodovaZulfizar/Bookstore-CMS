@@ -37,6 +37,9 @@ cd Bookstore-CMS
 - run `npm install` to install all required node modules
 - if you vant to see live version on your local machine run `npm start` and open live server
 
+### Live Version
+
+[Bookstore CMS](https://bookstore-zulfizar.herokuapp.com/)
 
 ## Authors
 
