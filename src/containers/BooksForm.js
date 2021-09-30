@@ -16,7 +16,7 @@ class BooksForm extends Component {
   }
 
   handleChange(event) {
-    const {name, value} = event.target;
+    const { name, value } = event.target;
     this.setState({ [name]: value });
   }
 
@@ -30,10 +30,12 @@ class BooksForm extends Component {
       createbook(this.state)
     };
 
-    this.setState = {
-      title: '',
-      category: '',
-    }
+    this.setState(
+      {
+        title: '',
+        category: '',
+      }
+    )
   }
 
   render() {
@@ -53,13 +55,14 @@ class BooksForm extends Component {
             minLength={5}
           />
           <select class="form-select" aria-label="Default select example" name="category" value={category} onChange={this.handleChange}>
+            <option value="disabled" key="0">Select</option>
             {categories.map((types) => (
               <option value={types} key={types}>
                 {types}
               </option>
             ))}
           </select>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     )
