@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { createbook } from '../actions';
 
 class BooksForm extends Component {
@@ -11,7 +11,7 @@ class BooksForm extends Component {
       category: '',
     };
 
-    this.handleChange  = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.submitForm = this.submitForm.bind(this);
   }
 
@@ -23,19 +23,19 @@ class BooksForm extends Component {
   submitForm(e) {
     e.preventDefault();
     const { createbook } = this.props;
-    const {title, category} = this.state;
+    const { title, category } = this.state;
     if (!(title && category)) return;
 
     if (createbook) {
-      createbook(this.state)
-    };
+      createbook(this.state);
+    }
 
     this.setState(
       {
         title: '',
         category: '',
-      }
-    )
+      },
+    );
   }
 
   render() {
@@ -54,7 +54,7 @@ class BooksForm extends Component {
             maxLength={50}
             minLength={5}
           />
-          <select class="form-select" aria-label="Default select example" name="category" value={category} onChange={this.handleChange}>
+          <select className="form-select" aria-label="Default select example" name="category" value={category} onChange={this.handleChange}>
             <option value="disabled" key="0">Select</option>
             {categories.map((types) => (
               <option value={types} key={types}>
@@ -62,19 +62,19 @@ class BooksForm extends Component {
               </option>
             ))}
           </select>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-primary">Submit</button>
         </form>
       </div>
-    )
+    );
   }
-};
+}
 
 BooksForm.propTypes = {
   createbook: PropTypes.func,
-}
+};
 
 BooksForm.defaultProps = {
   createbook: null,
-}
+};
 
 export default connect(null, { createbook })(BooksForm);
