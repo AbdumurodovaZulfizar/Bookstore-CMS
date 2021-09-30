@@ -2,8 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { removebook } from '../actions/index';
 import BookConatiner from '../components/Book';
+import PropTypes from 'prop-types';
 
-const BooksList = () => {
+const BooksList = ({ books, removebook }) => {
   return (
     <table class="table">
   <thead>
@@ -17,11 +18,11 @@ const BooksList = () => {
     {
       books.map((book) => (
         <BookConatiner
-        id={book.id}
-        title={book.title}
-        category={book.category}
-        key={book.id}
-        removebook={removebook}
+          id={book.id}
+          title={book.title}
+          category={book.category}
+          key={book.id}
+          removebook={removebook}
         />
       )
       )
@@ -29,6 +30,16 @@ const BooksList = () => {
   </tbody>
 </table>
   )
+}
+
+BooksList.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.instanceOf(Object)),
+  removebook: PropTypes.func,
+}
+
+BooksList.defaultProps = {
+  books: [],
+  removebook: null,
 }
 
 const mapStateToProps = (state) => ({
