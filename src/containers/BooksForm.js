@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux'
+import { createbook } from '../actions';
 
-export default class BooksForm extends Component {
+class BooksForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -71,3 +73,5 @@ BooksForm.propTypes = {
 BooksForm.defaultProps = {
   createbook: null,
 }
+
+export default connect(null, { createbook })(BooksForm);
