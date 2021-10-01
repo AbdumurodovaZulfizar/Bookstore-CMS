@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removebook } from '../actions/index';
+import { handleRemoveBook } from '../actions/index';
 import BookConatiner from '../components/Book';
 
 const BooksList = ({ books, removebook }) => (
@@ -22,7 +22,7 @@ const BooksList = ({ books, removebook }) => (
           title={book.title}
           category={book.category}
           key={book.id}
-          removebook={removebook}
+          removebook={handleRemoveBook}
         />
       ))
       }
@@ -45,7 +45,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  removeBook: (id) => dispatch(removebook(id)),
+  handleRemoveBook: (id) => dispatch(handleRemoveBook(id)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);

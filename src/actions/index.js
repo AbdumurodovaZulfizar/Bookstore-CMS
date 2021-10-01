@@ -19,7 +19,7 @@ export const createbook = (bookData) => {
   };
 };
 
-export const removebook = (id) => ({
+export const handleRemoveBook = (id) => ({
   type: REMOVE_BOOK,
   payload: { id },
 });
