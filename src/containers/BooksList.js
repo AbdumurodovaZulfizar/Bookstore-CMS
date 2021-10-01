@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { handleRemoveBook } from '../actions/index';
 import BookConatiner from '../components/Book';
 
-const BooksList = ({ books, removebook }) => (
+const BooksList = ({ books, handleRemoveBook }) => (
   <table className="table col-9 mx-auto">
     <thead>
       <tr>
@@ -22,7 +22,7 @@ const BooksList = ({ books, removebook }) => (
           title={book.title}
           category={book.category}
           key={book.id}
-          removebook={handleRemoveBook}
+          handleRemoveBook={handleRemoveBook}
         />
       ))
       }
@@ -32,12 +32,12 @@ const BooksList = ({ books, removebook }) => (
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.instanceOf(Object)),
-  removebook: PropTypes.func,
+  handleRemoveBook: PropTypes.func,
 };
 
 BooksList.defaultProps = {
   books: [],
-  removebook: null,
+  handleRemoveBook: null,
 };
 
 const mapStateToProps = (state) => ({
