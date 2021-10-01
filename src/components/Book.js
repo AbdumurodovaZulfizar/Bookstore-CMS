@@ -15,7 +15,7 @@ const Book = ({
 );
 
 Book.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   title: PropTypes.string,
   category: PropTypes.string,
   removebook: PropTypes.func,
