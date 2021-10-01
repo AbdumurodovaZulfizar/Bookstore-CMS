@@ -44,7 +44,7 @@ class BooksForm extends Component {
 
     return (
       <div>
-        <form onSubmit={this.submitForm}>
+        <form onSubmit={this.submitForm} className="col-9 mx-auto d-flex">
           <input
             type="text"
             onChange={this.handleChange}
@@ -53,8 +53,9 @@ class BooksForm extends Component {
             value={title}
             maxLength={50}
             minLength={5}
+            className="col-6 m-2"
           />
-          <select className="form-select" aria-label="Default select example" name="category" value={category} onChange={this.handleChange}>
+          <select className="col-3 m-2" aria-label="Default select example" name="category" value={category} onChange={this.handleChange}>
             <option value="disabled" key="0">Select</option>
             {categories.map((types) => (
               <option value={types} key={types}>
@@ -62,7 +63,7 @@ class BooksForm extends Component {
               </option>
             ))}
           </select>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-primary m-2">Submit</button>
         </form>
       </div>
     );

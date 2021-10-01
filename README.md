@@ -3,9 +3,9 @@
 
 This application is one of the Microverse requirements based on React library with REdux state managment, also used, JS, ES6, Webpack, Node.js, npm, Bootstarp, CSS. The bookstore app is used to save books and maintain their progress.
 
-### Milestone 2 - Components
+### Milestone 3 - Actions
 
-On this milestone I have created three main components - Book, BooksList, BooksForm, also App for rendering others. They have their own states, and ther are created some books on index.js file. Implemented reducers and actions.
+On this milestone I have implemented actions and reducers for this project.
 
 
 ### Built With

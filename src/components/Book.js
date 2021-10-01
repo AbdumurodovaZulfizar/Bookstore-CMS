@@ -1,31 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { removebook } from '../actions/index';
+import { handleRemoveBook } from '../actions/index';
 
 const Book = ({
-  id, title, category, removebook,
+  id, title, category, handleRemoveBook,
 }) => (
   <tr>
     <td>{id}</td>
     <td>{title}</td>
     <td>{category}</td>
-    <td><button onClick={() => removebook(id)} type="button">Remove</button></td>
+    <td><button onClick={() => handleRemoveBook(id)} type="button">Remove</button></td>
   </tr>
 );
 
 Book.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   title: PropTypes.string,
   category: PropTypes.string,
-  removebook: PropTypes.func,
+  handleRemoveBook: PropTypes.func,
 };
 
 Book.defaultProps = {
   id: null,
   title: '',
   category: '',
-  removebook: null,
+  handleRemoveBook: null,
 };
 
-export default connect(null, { removebook })(Book);
+export default connect(null, { handleRemoveBook })(Book);
