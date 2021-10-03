@@ -1,3 +1,12 @@
 body {
   margin: 0;
+  overflow-x: hidden;
+  background-color: #f5f6fa;
+}
+
+.big-container {
+  margin-top: 100px;
+  border-radius: 4px;
+  box-shadow: 20px 60px 60px rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
 }
