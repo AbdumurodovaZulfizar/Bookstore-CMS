@@ -1,10 +1,10 @@
 const defaultState = 'All';
 
 const filterReducer = (state = defaultState, action) => {
-  if(action.type === 'CHANGE_FILTER') {
-    return action.value
+  if (action.type === 'CHANGE_FILTER') {
+    return action.value;
   } else {
-    return state
+    return state;
   }
 }
 

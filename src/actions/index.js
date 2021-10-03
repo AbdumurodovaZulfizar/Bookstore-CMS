@@ -28,4 +28,4 @@ export const handleRemoveBook = (id) => ({
 export const changeFilter = (value) => ({
   type: CHANGE_FILTER,
   value,
-})
+});

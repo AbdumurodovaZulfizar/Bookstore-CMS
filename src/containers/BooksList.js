@@ -5,7 +5,9 @@ import { handleRemoveBook, changeFilter } from '../actions/index';
 import BookConatiner from '../components/Book';
 import FilterCategory from '../components/FilterCategory';
 
-const BooksList = ({ books, handleRemoveBook, filter, changeFilter }) => (
+const BooksList = ({
+  books, handleRemoveBook, filter, changeFilter
+}) => (
   <div>
     <FilterCategory filter={filter} handleFilter={changeFilter} />
     <table className="table col-9 mx-auto">
