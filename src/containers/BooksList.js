@@ -6,7 +6,7 @@ import BookConatiner from '../components/Book';
 import FilterCategory from '../components/FilterCategory';
 
 const BooksList = ({
-  books, handleRemoveBook, filter, changeFilter
+  books, handleRemoveBook, filter, changeFilter,
 }) => (
   <div>
     <FilterCategory filter={filter} handleFilter={changeFilter} />
