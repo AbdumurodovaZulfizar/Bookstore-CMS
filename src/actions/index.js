@@ -1,5 +1,6 @@
 const CREATE_BOOK = 'CREATE_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
+const CHANGE_FILTER = 'CHANGE_FILTER';
 
 const defaultBookData = {
   title: '',
@@ -22,4 +23,9 @@ export const createbook = (bookData) => {
 export const handleRemoveBook = (id) => ({
   type: REMOVE_BOOK,
   payload: { id },
+});
+
+export const changeFilter = (value) => ({
+  type: CHANGE_FILTER,
+  value,
 });
