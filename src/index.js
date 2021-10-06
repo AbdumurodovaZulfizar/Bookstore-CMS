@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import './index.css';
-import AppRouter from './components/Router'
+import AppRouter from './components/Router';
 import reducer from './reducres';
 import { createbook } from './actions';
 
