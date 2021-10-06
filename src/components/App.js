@@ -5,7 +5,7 @@ import BookFormContainer from '../containers/BooksForm';
 const App = () => (
   <div>
     <BookListContainer />
-    <hr/>
+    <hr />
     <BookFormContainer />
   </div>
 );

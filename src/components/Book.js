@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { handleRemoveBook } from '../actions/index';
+import { Link } from 'react-router-dom';
 
 const Book = ({
   id, title, category, handleRemoveBook,
@@ -10,13 +11,13 @@ const Book = ({
     <div>
       <h6 className="category">{category}</h6>
       <h4 className="title">{title}</h4>
-      <h6><a href="#">Suzanne Collins</a></h6>
+      <h6><Link to="/">Suzanne Collins</Link></h6>
       <div className="d-flex extra-links">
-        <h6><a href="#">Comments</a></h6>
+        <h6><Link to="/">Comments</Link></h6>
         <div className="mini-line"></div>
-        <h6><a href="#" onClick={() => handleRemoveBook(id)}>Remove</a></h6>
+        <h6><Link to="/" onClick={() => handleRemoveBook(id)}>Remove</Link></h6>
         <div className="mini-line"></div>
-        <h6><a href="#">Edit</a></h6>
+        <h6><Link to="/">Edit</Link></h6>
       </div>
     </div>
     <div className="d-flex">

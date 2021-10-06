@@ -7,22 +7,22 @@ const Header = () => (
     <div className="d-flex">
       <Link to="/" className="logo">
       Bookstore CMS
-    </Link>
-    <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-      <NavLink exact to="/" className="nav_link">
-      BOOKS
-      </NavLink>
-      <NavLink exact to="/" className="nav_link">
-      CATEGORIES
-      </NavLink>
-    </nav>
+      </Link>
+      <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <NavLink exact to="/" className="nav_link">
+        BOOKS
+        </NavLink>
+        <NavLink exact to="/" className="nav_link">
+        CATEGORIES
+        </NavLink>
+      </nav>
     </div>
     <div>
-    <Link to="/" className="icon">
-      <div className="icon-wrapper text-center">
-      <i class="fas fa-user"></i>
-      </div>
-    </Link>
+      <Link to="/" className="icon">
+        <div className="icon-wrapper text-center">
+          <i class="fas fa-user"></i>
+        </div>
+      </Link>
     </div>
   </header>
 );
