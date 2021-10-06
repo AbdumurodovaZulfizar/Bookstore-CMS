@@ -3,7 +3,7 @@ import BookListContainer from '../containers/BooksList';
 import BookFormContainer from '../containers/BooksForm';
 
 const App = () => (
-  <div className="big-container col-10 mx-auto">
+  <div>
     <BookListContainer />
     <BookFormContainer />
   </div>
