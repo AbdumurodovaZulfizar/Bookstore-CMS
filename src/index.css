@@ -25,6 +25,10 @@ hr,
   margin: 10px 70px;
 }
 
+form {
+  justify-content: space-between;
+}
+
 header {
   background-color: #fff;
   padding: 20px 70px;
