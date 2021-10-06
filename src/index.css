@@ -12,6 +12,7 @@ body {
 
 .big-container {
   margin-top: 100px;
+  margin-bottom: 100px;
   border-radius: 4px;
   box-shadow: 20px 60px 60px rgba(0, 0, 0, 0.05);
   background-color: #fafafa;
@@ -19,7 +20,8 @@ body {
 }
 
 hr,
-.category-wrapper {
+.category-wrapper,
+.book_form {
   margin: 10px 70px;
 }
 
@@ -74,8 +76,18 @@ header {
 }
 
 .nav_link:last-child,
-.category {
+.category,
+.book_form h5 {
   color: #6d6969;
+}
+
+.book_form h5 {
+  font-weight: 700;
+}
+
+.book_form input:focus,
+.book_form button:focus {
+  outline: 0;
 }
 
 .icon-wrapper {
