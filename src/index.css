@@ -16,7 +16,7 @@ body {
   border-radius: 4px;
   box-shadow: 20px 60px 60px rgba(0, 0, 0, 0.05);
   background-color: #fafafa;
-  padding: 0;
+  padding: 0 0 80px 0;
 }
 
 hr,
