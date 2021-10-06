@@ -18,10 +18,10 @@ const Header = () => (
     </nav>
     </div>
     <div>
-    <Link to="/" className="">
-      <span>
+    <Link to="/" className="icon">
+      <div className="icon-wrapper text-center">
       <i class="fas fa-user"></i>
-      </span>
+      </div>
     </Link>
     </div>
   </header>

@@ -6,12 +6,35 @@ import { handleRemoveBook } from '../actions/index';
 const Book = ({
   id, title, category, handleRemoveBook,
 }) => (
-  <tr>
-    <td>{id}</td>
-    <td>{title}</td>
-    <td>{category}</td>
-    <td><button onClick={() => handleRemoveBook(id)} type="button">Remove</button></td>
-  </tr>
+  <div className="single-book d-flex justify-content-between">
+    <div>
+      <h6 className="category">{category}</h6>
+      <h4 className="title">{title}</h4>
+      <h6><a href="#">Suzanne Collins</a></h6>
+      <div className="d-flex extra-links">
+        <h6><a href="#">Comments</a></h6>
+        <div className="mini-line"></div>
+        <h6><a href="#" onClick={() => handleRemoveBook(id)}>Remove</a></h6>
+        <div className="mini-line"></div>
+        <h6><a href="#">Edit</a></h6>
+      </div>
+    </div>
+    <div className="d-flex">
+      <div className="circle"></div>
+      <div className="percent">
+        <h3>64%</h3>
+        <h6>Completed</h6>
+      </div>
+      <div className="line"></div>
+      <div className="update-book">
+        <h6 className="text-uppercase current">
+        Current Chapter
+        </h6>
+        <h6>Chapter 17</h6>
+        <button type="button" className="text-uppercase">Update progress</button>
+      </div>
+    </div>
+  </div>
 );
 
 Book.propTypes = {

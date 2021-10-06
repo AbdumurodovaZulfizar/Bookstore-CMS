@@ -11,14 +11,6 @@ const BooksList = ({
   <div>
     <FilterCategory filter={filter} handleFilter={changeFilter} />
     <table className="table col-9 mx-auto">
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Title</th>
-          <th scope="col">Category</th>
-          <th scope="col">Buttons</th>
-        </tr>
-      </thead>
       <tbody>
         {
         books.map((book) => (

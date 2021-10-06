@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -14,9 +18,14 @@ body {
   padding: 0;
 }
 
+hr,
+.category-wrapper {
+  margin: 10px 70px;
+}
+
 header {
   background-color: #fff;
-padding: 20px 70px;
+  padding: 20px 70px;
 }
 
 .logo {
@@ -36,12 +45,111 @@ padding: 20px 70px;
   padding-top: 9px;
 }
 
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.update-book {
+  padding: 15px 20px;
+}
+
+.update-book button {
+  background-color: #0290ff;
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.current {
+  color: #999898;
+}
+
 .nav_link:first-child {
   color: black;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.nav_link:last-child {
-  color: #3f3e3e;
+.nav_link:last-child,
+.category {
+  color: #6d6969;
+}
+
+.icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #999898;
+  border-radius: 50%;
+}
+
+.icon-wrapper i {
+  font-size: 17px;
+  padding-top: 7px;
+}
+
+.single-book {
+  margin: 20px 70px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.single-book a {
+  text-decoration: none;
+  color: #4386bf;
+  font-size: 15px;
+}
+
+.mini-line {
+  height: 20px;
+  width: 1px;
+  background-color: #b8b5b5;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.extra-links h6 {
+  margin: 0;
+}
+
+.extra-links {
+  padding-top: 10px;
+}
+
+.percent {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.line {
+  height: 70px;
+  width: 1px;
+  background-color: #b8b5b5;
+  margin: 30px;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-bottom: 10px solid #e8e8e8;
+  border-right: 10px solid #e8e8e8;
+  border-radius: 50%;
+  border-color: #e8e8e8 #379cf6 #379cf6 #e8e8e8;
+  transform: rotate(15deg);
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+select {
+  border: 1px solid #999898;
+  border-radius: 2px;
+  float: right;
+}
+
+select:focus {
+  outline: 0;
 }
